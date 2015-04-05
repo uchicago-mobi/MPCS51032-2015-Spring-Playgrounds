@@ -1,0 +1,2 @@
+shoppingList = []
+occupations = [:]
