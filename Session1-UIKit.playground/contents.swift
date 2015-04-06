@@ -48,16 +48,16 @@ rectangle.backgroundColor = UIColor.whiteColor()
 containerView.addSubview(rectangle)
 
 UIView.animateWithDuration(2.0, animations: { () -> Void in
-    let endingColor = UIColor.greenColor()
-    circle.backgroundColor = endingColor
-    
-    let scaleTransform = CGAffineTransformMakeScale(5.0, 5.0)
-    
-    circle.transform = scaleTransform
-    
-    let rotationTransform = CGAffineTransformMakeRotation(3.14)
-    
-    rectangle.transform = rotationTransform
+let endingColor = UIColor.greenColor()
+circle.backgroundColor = endingColor
+
+let scaleTransform = CGAffineTransformMakeScale(5.0, 5.0)
+
+circle.transform = scaleTransform
+
+let rotationTransform = CGAffineTransformMakeRotation(3.14)
+
+rectangle.transform = rotationTransform
 })
 
 */

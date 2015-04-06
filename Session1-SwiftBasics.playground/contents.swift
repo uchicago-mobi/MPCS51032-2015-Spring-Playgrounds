@@ -1,16 +1,16 @@
 //: MPCS51032 - Session 1 Swift Playground
-//: This playgournd contains basic elements of using Swfit for those with experience using Objective-C.  For a more thorough introduction, consult Apple Developer documentation.  This playground uses some examples from Apple's Swift book and Guided.playground.  It also uses some examples from RayWenderlich.com.  
+//: This playgournd contains basic elements of using Swfit for those with experience using Objective-C.  For a more thorough introduction, consult Apple Developer documentation.  This playground uses some examples from Apple's Swift book and Guided.playground.  It also uses some examples from RayWenderlich.com.
 
 import UIKit
 var str = "Hello, Swift"
 
 //: # Variables and Constants #
-//: Use `let` to make a constant and `var` to make a variable. The value of a constant doesn’t need to be known at compile time, but you must assign it a value exactly once. 
+//: Use `let` to make a constant and `var` to make a variable. The value of a constant doesn’t need to be known at compile time, but you must assign it a value exactly once.
 
 var myVariable = 44
 myVariable = 55
 let myConstant = 42
-myConstant = 50
+//myConstant = 50
 
 //: A constant or variable must have the same type as the value you want to assign to it. you don’t always have to write the type explicitly. Providing a value when you create a constant or variable lets the compiler infer its type.
 
@@ -222,9 +222,9 @@ let interestingNumbers = [
 var largest = 0
 for (kind, numbers) in interestingNumbers {
     for number in numbers {
-        if number > largest {
-            largest = number
-        }
+    if number > largest {
+    largest = number
+    }
     }
 }
 println(largest)
@@ -263,7 +263,7 @@ default:
 //: # Optionals
 //: In the Objective-C runtime, messaging nil returns nil, which means the null pointer is effectively safe. However, this doesn’t particularly help you if you’re expecting the reference to be non-nil. The usual way around this is to do an assertion check that the variable is never nil. In debug mode, your app would crash if it encounters nil, so you can find the bug and fix it before releasing the code.
 
-//: When you do need the nil value, you can use an optional. Optionals are a way of wrapping up the concept of “has a value” or “may have a value” into a language- wide feature. 
+//: When you do need the nil value, you can use an optional. Optionals are a way of wrapping up the concept of “has a value” or “may have a value” into a language- wide feature.
 
 // Declare an optional
 var device: String?
