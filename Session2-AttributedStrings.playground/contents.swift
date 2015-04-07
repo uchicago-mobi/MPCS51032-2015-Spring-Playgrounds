@@ -21,7 +21,7 @@ helloLabel.text = "Hello Label!"
 
 //: Let the label use an attributed string instead
 var attributedString = NSMutableAttributedString()
-attributedString = NSMutableAttributedString(string: "Hello World!", attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 50.0)!])
+attributedString = NSMutableAttributedString(string: "Hello World this is a demo!", attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 100.0)!])
 helloLabel.attributedText = attributedString
 
 
@@ -33,7 +33,7 @@ Note that attributed string attributes are cumulative.  They will persist on tha
 */
 
 //: Changing the font attribute
-attributedString = NSMutableAttributedString(string: "Hello World!", attributes: [NSFontAttributeName:UIFont(name: "ChalkboardSE-Regular", size: 50.0)!])
+attributedString = NSMutableAttributedString(string: "Hello World!", attributes: [NSFontAttributeName:UIFont(name: "ChalkboardSE-Regular", size: 100.0)!])
 
 //: Changing the font over a range
 attributedString.addAttribute(NSFontAttributeName, value: UIFont(name: "AmericanTypewriter-Bold", size: 18.0)!, range: NSRange(location:0,length:5))

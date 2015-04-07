@@ -48,22 +48,7 @@ Stored and Computed Properties
 */
 class Box {
     var numberOfSides = 4           // Stored property
-    var description: String {       // Computed property
-        get {            return "\(numberOfSides) wheels"        }
-        // You can create an optional setter (if it makes sense)
-        // set {
-        // }
-        
-        // You can omit the get {} if only using a getter
-    }
-    
-    // Lazy Properties
-    var firstVisit: Bool = false
-    lazy var bigImage: UIImage = UIImage(named: "ReallyBigImage")!
-    func login() {
-        if (firstVisit == false) {
-            //self.imageView.image = bigImage
-        }
+    var description: String {       // Computed property            return "\(numberOfSides) wheels"
     }
 }
 
@@ -97,16 +82,28 @@ Initializers
 
 class NamedShape {
     var numberOfSides: Int = 0
-    var name: String
+    var name: String!
+    var noname: String?
+    
     
     init(name: String) {
         // Need to use `self` if property has same name as parameter
-        self.name = name
+        //self.name = name
+        self.name = "forced"
+        self.noname = "optional"
     }
     
     func simpleDescription() -> String {
         return "A shape with \(numberOfSides) sides."
     }
+}
+
+var a = NamedShape.init(name:"hi")
+println(a.name)
+println(a.noname!)
+
+if let n = a.noname {
+    println(n)
 }
 
 /*:
@@ -163,10 +160,12 @@ class Animal {
 
 class Dog: Animal {
     var hasFourLegs: Bool
+    
     init(animalName: String, fourLegs: Bool) {
         // Initialize all subclass properteis before calling superclass
         hasFourLegs = fourLegs
         super.init(animalName: animalName)
+        name = "RUFF"
     }
     
     // Convienence initializer
@@ -261,8 +260,12 @@ counter.incrementBy(2, numberOfTimes: 7)
 //: ### Optional Class Instances
 //: - When working with optional values, you can write ? before operations like methods, properties, and subscripting.
 //: - If the value before the ? is nil, everything after the ? is ignored and the value of the whole expression is nil. This is called **optional binding**.  Otherwise, the optional value is unwrapped, and everything after the ? acts on the unwrapped value. In both cases, the value of the whole expression is an optional value.
-let optionalSquare: Square? = Square(sideLength: 2.5, name: "optional square")
-let sideLength = optionalSquare?.sideLength
+var optionalSquare: Square? //= Square(sideLength: 4.5, name: "optional square")
+
+// ????
+var s = optionalSquare?.sideLength
+println(s)
+
 
 
  
