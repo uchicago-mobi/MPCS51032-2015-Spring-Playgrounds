@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3746CB7418E906F9009664AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3746CB7318E906F9009664AF /* Foundation.framework */; };
+		3746CB7618E906F9009664AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3746CB7518E906F9009664AF /* CoreGraphics.framework */; };
+		3746CB7818E906F9009664AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3746CB7718E906F9009664AF /* UIKit.framework */; };
+		3746CB7E18E906F9009664AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3746CB7C18E906F9009664AF /* InfoPlist.strings */; };
+		3746CB8018E906F9009664AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3746CB7F18E906F9009664AF /* main.m */; };
+		3746CB8418E906F9009664AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3746CB8318E906F9009664AF /* AppDelegate.m */; };
+		3746CB8718E906F9009664AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3746CB8518E906F9009664AF /* Main.storyboard */; };
+		3746CB8C18E906F9009664AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3746CB8B18E906F9009664AF /* Images.xcassets */; };
+		3746CB9318E906F9009664AF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3746CB9218E906F9009664AF /* XCTest.framework */; };
+		3746CB9418E906F9009664AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3746CB7318E906F9009664AF /* Foundation.framework */; };
+		3746CB9518E906F9009664AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3746CB7718E906F9009664AF /* UIKit.framework */; };
+		3746CB9D18E906F9009664AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3746CB9B18E906F9009664AF /* InfoPlist.strings */; };
+		3746CB9F18E906F9009664AF /* _014_Spring_DrawerWithViewControllerContainmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3746CB9E18E906F9009664AF /* _014_Spring_DrawerWithViewControllerContainmentTests.m */; };
+		3746CBAA18E90733009664AF /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3746CBA918E90733009664AF /* CenterViewController.m */; };
+		3746CBB018E9076B009664AF /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3746CBAF18E9076B009664AF /* ContainerViewController.m */; };
+		3746CBB318E911D8009664AF /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3746CBB218E911D8009664AF /* LeftViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3746CB9618E906F9009664AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3746CB6818E906F9009664AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3746CB6F18E906F9009664AF;
+			remoteInfo = "2014-Spring-DrawerWithViewControllerContainment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3746CB7018E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2014-Spring-DrawerWithViewControllerContainment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3746CB7318E906F9009664AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3746CB7518E906F9009664AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3746CB7718E906F9009664AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3746CB7B18E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainment-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "2014-Spring-DrawerWithViewControllerContainment-Info.plist"; sourceTree = "<group>"; };
+		3746CB7D18E906F9009664AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3746CB7F18E906F9009664AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3746CB8118E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainment-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "2014-Spring-DrawerWithViewControllerContainment-Prefix.pch"; sourceTree = "<group>"; };
+		3746CB8218E906F9009664AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3746CB8318E906F9009664AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3746CB8618E906F9009664AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3746CB8B18E906F9009664AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3746CB9118E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "2014-Spring-DrawerWithViewControllerContainmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3746CB9218E906F9009664AF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3746CB9A18E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainmentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "2014-Spring-DrawerWithViewControllerContainmentTests-Info.plist"; sourceTree = "<group>"; };
+		3746CB9C18E906F9009664AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3746CB9E18E906F9009664AF /* _014_Spring_DrawerWithViewControllerContainmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _014_Spring_DrawerWithViewControllerContainmentTests.m; sourceTree = "<group>"; };
+		3746CBA818E90733009664AF /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CenterViewController.h; path = "2014-Spring-DrawerWithViewControllerContainment/CenterViewController.h"; sourceTree = "<group>"; };
+		3746CBA918E90733009664AF /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CenterViewController.m; path = "2014-Spring-DrawerWithViewControllerContainment/CenterViewController.m"; sourceTree = "<group>"; };
+		3746CBAE18E9076B009664AF /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContainerViewController.h; path = "2014-Spring-DrawerWithViewControllerContainment/ContainerViewController.h"; sourceTree = "<group>"; };
+		3746CBAF18E9076B009664AF /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContainerViewController.m; path = "2014-Spring-DrawerWithViewControllerContainment/ContainerViewController.m"; sourceTree = "<group>"; };
+		3746CBB118E911D8009664AF /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftViewController.h; path = "2014-Spring-DrawerWithViewControllerContainment/LeftViewController.h"; sourceTree = "<group>"; };
+		3746CBB218E911D8009664AF /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftViewController.m; path = "2014-Spring-DrawerWithViewControllerContainment/LeftViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3746CB6D18E906F9009664AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3746CB7618E906F9009664AF /* CoreGraphics.framework in Frameworks */,
+				3746CB7818E906F9009664AF /* UIKit.framework in Frameworks */,
+				3746CB7418E906F9009664AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3746CB8E18E906F9009664AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3746CB9318E906F9009664AF /* XCTest.framework in Frameworks */,
+				3746CB9518E906F9009664AF /* UIKit.framework in Frameworks */,
+				3746CB9418E906F9009664AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3746CB6718E906F9009664AF = {
+			isa = PBXGroup;
+			children = (
+				3746CBB118E911D8009664AF /* LeftViewController.h */,
+				3746CBB218E911D8009664AF /* LeftViewController.m */,
+				3746CBA818E90733009664AF /* CenterViewController.h */,
+				3746CBA918E90733009664AF /* CenterViewController.m */,
+				3746CBAE18E9076B009664AF /* ContainerViewController.h */,
+				3746CBAF18E9076B009664AF /* ContainerViewController.m */,
+				3746CB7918E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainment */,
+				3746CB9818E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainmentTests */,
+				3746CB7218E906F9009664AF /* Frameworks */,
+				3746CB7118E906F9009664AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3746CB7118E906F9009664AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3746CB7018E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainment.app */,
+				3746CB9118E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainmentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3746CB7218E906F9009664AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3746CB7318E906F9009664AF /* Foundation.framework */,
+				3746CB7518E906F9009664AF /* CoreGraphics.framework */,
+				3746CB7718E906F9009664AF /* UIKit.framework */,
+				3746CB9218E906F9009664AF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3746CB7918E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainment */ = {
+			isa = PBXGroup;
+			children = (
+				3746CB8218E906F9009664AF /* AppDelegate.h */,
+				3746CB8318E906F9009664AF /* AppDelegate.m */,
+				3746CB8B18E906F9009664AF /* Images.xcassets */,
+				3746CB7A18E906F9009664AF /* Supporting Files */,
+			);
+			path = "2014-Spring-DrawerWithViewControllerContainment";
+			sourceTree = "<group>";
+		};
+		3746CB7A18E906F9009664AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3746CB8518E906F9009664AF /* Main.storyboard */,
+				3746CB7B18E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainment-Info.plist */,
+				3746CB7C18E906F9009664AF /* InfoPlist.strings */,
+				3746CB7F18E906F9009664AF /* main.m */,
+				3746CB8118E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainment-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3746CB9818E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				3746CB9E18E906F9009664AF /* _014_Spring_DrawerWithViewControllerContainmentTests.m */,
+				3746CB9918E906F9009664AF /* Supporting Files */,
+			);
+			path = "2014-Spring-DrawerWithViewControllerContainmentTests";
+			sourceTree = "<group>";
+		};
+		3746CB9918E906F9009664AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3746CB9A18E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainmentTests-Info.plist */,
+				3746CB9B18E906F9009664AF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3746CB6F18E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3746CBA218E906F9009664AF /* Build configuration list for PBXNativeTarget "2014-Spring-DrawerWithViewControllerContainment" */;
+			buildPhases = (
+				3746CB6C18E906F9009664AF /* Sources */,
+				3746CB6D18E906F9009664AF /* Frameworks */,
+				3746CB6E18E906F9009664AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "2014-Spring-DrawerWithViewControllerContainment";
+			productName = "2014-Spring-DrawerWithViewControllerContainment";
+			productReference = 3746CB7018E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3746CB9018E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3746CBA518E906F9009664AF /* Build configuration list for PBXNativeTarget "2014-Spring-DrawerWithViewControllerContainmentTests" */;
+			buildPhases = (
+				3746CB8D18E906F9009664AF /* Sources */,
+				3746CB8E18E906F9009664AF /* Frameworks */,
+				3746CB8F18E906F9009664AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3746CB9718E906F9009664AF /* PBXTargetDependency */,
+			);
+			name = "2014-Spring-DrawerWithViewControllerContainmentTests";
+			productName = "2014-Spring-DrawerWithViewControllerContainmentTests";
+			productReference = 3746CB9118E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3746CB6818E906F9009664AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "The University of Chicago, Department of Computer Science";
+				TargetAttributes = {
+					3746CB9018E906F9009664AF = {
+						TestTargetID = 3746CB6F18E906F9009664AF;
+					};
+				};
+			};
+			buildConfigurationList = 3746CB6B18E906F9009664AF /* Build configuration list for PBXProject "2014-Spring-DrawerWithViewControllerContainment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3746CB6718E906F9009664AF;
+			productRefGroup = 3746CB7118E906F9009664AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3746CB6F18E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainment */,
+				3746CB9018E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3746CB6E18E906F9009664AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3746CB8C18E906F9009664AF /* Images.xcassets in Resources */,
+				3746CB7E18E906F9009664AF /* InfoPlist.strings in Resources */,
+				3746CB8718E906F9009664AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3746CB8F18E906F9009664AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3746CB9D18E906F9009664AF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3746CB6C18E906F9009664AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3746CB8418E906F9009664AF /* AppDelegate.m in Sources */,
+				3746CBB318E911D8009664AF /* LeftViewController.m in Sources */,
+				3746CB8018E906F9009664AF /* main.m in Sources */,
+				3746CBAA18E90733009664AF /* CenterViewController.m in Sources */,
+				3746CBB018E9076B009664AF /* ContainerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3746CB8D18E906F9009664AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3746CB9F18E906F9009664AF /* _014_Spring_DrawerWithViewControllerContainmentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3746CB9718E906F9009664AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3746CB6F18E906F9009664AF /* 2014-Spring-DrawerWithViewControllerContainment */;
+			targetProxy = 3746CB9618E906F9009664AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3746CB7C18E906F9009664AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3746CB7D18E906F9009664AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3746CB8518E906F9009664AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3746CB8618E906F9009664AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3746CB9B18E906F9009664AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3746CB9C18E906F9009664AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3746CBA018E906F9009664AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3746CBA118E906F9009664AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3746CBA318E906F9009664AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "2014-Spring-DrawerWithViewControllerContainment/2014-Spring-DrawerWithViewControllerContainment-Prefix.pch";
+				INFOPLIST_FILE = "2014-Spring-DrawerWithViewControllerContainment/2014-Spring-DrawerWithViewControllerContainment-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3746CBA418E906F9009664AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "2014-Spring-DrawerWithViewControllerContainment/2014-Spring-DrawerWithViewControllerContainment-Prefix.pch";
+				INFOPLIST_FILE = "2014-Spring-DrawerWithViewControllerContainment/2014-Spring-DrawerWithViewControllerContainment-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3746CBA618E906F9009664AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/2014-Spring-DrawerWithViewControllerContainment.app/2014-Spring-DrawerWithViewControllerContainment";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "2014-Spring-DrawerWithViewControllerContainment/2014-Spring-DrawerWithViewControllerContainment-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "2014-Spring-DrawerWithViewControllerContainmentTests/2014-Spring-DrawerWithViewControllerContainmentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3746CBA718E906F9009664AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/2014-Spring-DrawerWithViewControllerContainment.app/2014-Spring-DrawerWithViewControllerContainment";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "2014-Spring-DrawerWithViewControllerContainment/2014-Spring-DrawerWithViewControllerContainment-Prefix.pch";
+				INFOPLIST_FILE = "2014-Spring-DrawerWithViewControllerContainmentTests/2014-Spring-DrawerWithViewControllerContainmentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3746CB6B18E906F9009664AF /* Build configuration list for PBXProject "2014-Spring-DrawerWithViewControllerContainment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3746CBA018E906F9009664AF /* Debug */,
+				3746CBA118E906F9009664AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3746CBA218E906F9009664AF /* Build configuration list for PBXNativeTarget "2014-Spring-DrawerWithViewControllerContainment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3746CBA318E906F9009664AF /* Debug */,
+				3746CBA418E906F9009664AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3746CBA518E906F9009664AF /* Build configuration list for PBXNativeTarget "2014-Spring-DrawerWithViewControllerContainmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3746CBA618E906F9009664AF /* Debug */,
+				3746CBA718E906F9009664AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3746CB6818E906F9009664AF /* Project object */;
+}
