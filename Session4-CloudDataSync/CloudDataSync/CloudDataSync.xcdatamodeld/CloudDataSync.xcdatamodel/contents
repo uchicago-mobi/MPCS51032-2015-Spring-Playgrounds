@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D131" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Application" representedClassName="CloudDataSync.Application" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="Image" representedClassName="PRODUCT_MODULE_NAME.Image" syncable="YES">
+        <attribute name="imageData" optional="YES" attributeType="Transformable" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <configuration name="ImageCache"/>
+    <elements>
+        <element name="Application" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Image" positionX="-54" positionY="18" width="128" height="75"/>
+    </elements>
+</model>

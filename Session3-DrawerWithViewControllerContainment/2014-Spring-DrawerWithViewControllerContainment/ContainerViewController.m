@@ -35,11 +35,11 @@
     [self addChildViewController:_centerViewController];
     [_centerViewController didMoveToParentViewController:self];
 
-    /*
+
     UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(swipeToReveal:)];
     panRecognizer.delegate = self;
     [self.centerViewController.view addGestureRecognizer:panRecognizer];
-     */
+
 }
 
 //------------------------------------------------------------------------------
@@ -87,7 +87,7 @@
 //------------------------------------------------------------------------------
 #pragma mark - Gesture Recognizer Delegate Methods
 //------------------------------------------------------------------------------
-/*
+
 -(void)swipeToReveal:(id)sender
 {
 	[[[(UITapGestureRecognizer*)sender view] layer] removeAllAnimations];
@@ -119,6 +119,6 @@
         [(UIPanGestureRecognizer*)sender setTranslation:CGPointMake(0,0) inView:self.view];
     }
 }
-*/
+
 
 @end

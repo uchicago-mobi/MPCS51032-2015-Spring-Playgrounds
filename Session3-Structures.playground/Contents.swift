@@ -28,6 +28,11 @@ struct Resolution {
     var height = 0
 }
 
+class Resolution2 {
+    var width = 0
+    var height = 0
+}
+
 let someResolution = Resolution()
 
 // Access the properties of an instance of a struct using dot syntax
@@ -72,6 +77,8 @@ rectangle2.length = 24
 
 println(rectangle1.length)
 println(rectangle2.length)
+
+
 
 
 // Now lets try with structures
