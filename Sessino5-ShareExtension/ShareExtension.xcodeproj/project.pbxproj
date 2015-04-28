@@ -12,6 +12,7 @@
 		3709CECB1AE7ECF100B0CAED /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3709CECA1AE7ECF100B0CAED /* MainInterface.storyboard */; };
 		3709CECE1AE7ECF100B0CAED /* Todays Favorites.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3709CEC11AE7ECF100B0CAED /* Todays Favorites.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3709CED31AE7EF2600B0CAED /* ExtensionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D4B6771AE739AA000C0508 /* ExtensionKit.framework */; };
+		37C8D7C01AEFDD8A006F93BF /* Preprocessor.js in Resources */ = {isa = PBXBuildFile; fileRef = 37C8D7BF1AEFDD8A006F93BF /* Preprocessor.js */; };
 		37D4B6151AE6ED2A000C0508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4B6141AE6ED2A000C0508 /* AppDelegate.swift */; };
 		37D4B61A1AE6ED2A000C0508 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D4B6181AE6ED2A000C0508 /* Main.storyboard */; };
 		37D4B61C1AE6ED2A000C0508 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D4B61B1AE6ED2A000C0508 /* Images.xcassets */; };
@@ -108,6 +109,7 @@
 		3709CEC81AE7ECF100B0CAED /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		3709CECA1AE7ECF100B0CAED /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		3709CED21AE7ED0B00B0CAED /* Todays Favorites.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Todays Favorites.entitlements"; sourceTree = "<group>"; };
+		37C8D7BF1AEFDD8A006F93BF /* Preprocessor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Preprocessor.js; sourceTree = "<group>"; };
 		37D4B60F1AE6ED2A000C0508 /* ShareExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D4B6131AE6ED2A000C0508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37D4B6141AE6ED2A000C0508 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -184,12 +186,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3709CEC21AE7ECF100B0CAED /* Frameworks */ = {
+		3709CEC21AE7ECF100B0CAED /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				3709CEC31AE7ECF100B0CAED /* NotificationCenter.framework */,
 			);
-			name = Frameworks;
+			name = "Linked Frameworks";
 			sourceTree = "<group>";
 		};
 		3709CEC51AE7ECF100B0CAED /* Todays Favorites */ = {
@@ -211,16 +213,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		37C8D7BE1AEFD7A1006F93BF /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				37D4B6871AE739AA000C0508 /* ExtensionKitTests */,
+				37D4B6271AE6ED2A000C0508 /* ShareExtensionTests */,
+			);
+			name = Testing;
+			sourceTree = "<group>";
+		};
 		37D4B6061AE6ED2A000C0508 = {
 			isa = PBXGroup;
 			children = (
 				37D4B6111AE6ED2A000C0508 /* ShareExtension */,
 				37D4B63A1AE6ED80000C0508 /* FavoriteExtension */,
 				37D4B6781AE739AA000C0508 /* ExtensionKit */,
-				37D4B6871AE739AA000C0508 /* ExtensionKitTests */,
-				37D4B6271AE6ED2A000C0508 /* ShareExtensionTests */,
 				3709CEC51AE7ECF100B0CAED /* Todays Favorites */,
-				3709CEC21AE7ECF100B0CAED /* Frameworks */,
+				3709CEC21AE7ECF100B0CAED /* Linked Frameworks */,
+				37C8D7BE1AEFD7A1006F93BF /* Testing */,
 				37D4B6101AE6ED2A000C0508 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -281,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				37D4B6481AE6ED83000C0508 /* FavoriteExtension.entitlements */,
+				37C8D7BF1AEFDD8A006F93BF /* Preprocessor.js */,
 				37D4B63D1AE6ED80000C0508 /* ShareViewController.swift */,
 				37D4B63F1AE6ED80000C0508 /* MainInterface.storyboard */,
 				37D4B63B1AE6ED80000C0508 /* Supporting Files */,
@@ -559,6 +570,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C8D7C01AEFDD8A006F93BF /* Preprocessor.js in Resources */,
 				37D4B6401AE6ED80000C0508 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

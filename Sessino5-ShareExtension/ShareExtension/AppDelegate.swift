@@ -10,6 +10,7 @@ import UIKit
 
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -24,9 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             alertView.alertViewStyle = .Default
             alertView.show()
         }
-
         return true
     }
+    
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
         println("The application was launched from the url: \(url)")
         return true
@@ -53,7 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

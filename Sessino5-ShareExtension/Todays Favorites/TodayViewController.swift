@@ -56,6 +56,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         cell.textLabel!.text = sharedItemDictionary["contentText"] as? String
         cell.detailTextLabel!.text = (sharedItemDictionary["date"] as? NSDate)!.description
         
+        // The images are stored here as NSData inside of NSUserDefaults, we
+        // need to convert to an UIImage before we add it to the table
+        if let imageData = sharedItemDictionary["imageData"] as? NSData {
+            cell.imageView!.image = UIImage(data: imageData)
+        }
+        
         return cell
     }
     
