@@ -78,6 +78,7 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
     
     lazy var fetchedResultsController: NSFetchedResultsController = {
         let fetchRequest = NSFetchRequest(entityName: "Application")
+
         let primarySortDescriptor = NSSortDescriptor(key: "timeStamp", ascending: false)
         fetchRequest.sortDescriptors = [primarySortDescriptor]
         

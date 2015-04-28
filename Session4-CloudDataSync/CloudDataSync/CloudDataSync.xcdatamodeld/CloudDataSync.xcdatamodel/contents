@@ -6,6 +6,7 @@
         <attribute name="price" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
+    <entity name="Entity" syncable="YES"/>
     <entity name="Image" representedClassName="PRODUCT_MODULE_NAME.Image" syncable="YES">
         <attribute name="imageData" optional="YES" attributeType="Transformable" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
@@ -14,5 +15,6 @@
     <elements>
         <element name="Application" positionX="-63" positionY="-18" width="128" height="105"/>
         <element name="Image" positionX="-54" positionY="18" width="128" height="75"/>
+        <element name="Entity" positionX="-54" positionY="18" width="128" height="45"/>
     </elements>
 </model>

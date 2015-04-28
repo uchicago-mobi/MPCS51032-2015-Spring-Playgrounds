@@ -10,7 +10,7 @@ import Foundation
 import CloudKit
 
 /** To enable extension data sharing, we need to use an app group */
-let sharedAppGroup: String = "group.mobi.uchicago.cloudDataSync"
+let sharedAppGroup: String = "group.extensiontest2"
 
 /** The key for our defaults storage */
 let favoritesKey: String = "Favorites"
@@ -70,19 +70,6 @@ public class LocalDefaultsManager: DataKitManager {
 }
 
 // -----------------------------------------------------------------------------
-// MARK: - UbiquityDefaultsManager
-/** 
-    iCloudDefaultsManager
-    Store in iCloud Key-Value Storage
-*/
-public class UbiquityDefaultsManager: DataKitManager {
-    
-    public func add(object anObject: NSObject) {}
-    public func currentList() -> NSMutableArray { return NSMutableArray()}
-    public func reset() {}
-}
-
-// -----------------------------------------------------------------------------
 // MARK: - ClouldKitManager
 /**
     CloudKitManager
@@ -121,8 +108,6 @@ public class CloudKitManager: DataKitManager {
         publicDB.saveRecord(record, completionHandler: { (record, error) -> Void in
                 NSLog("Saved to cloud kit")
             })
-        
-        
     }
 
     public func currentList() -> NSMutableArray {
