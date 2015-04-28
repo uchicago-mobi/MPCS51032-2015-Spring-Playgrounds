@@ -9,11 +9,63 @@
 import UIKit
 import Social
 import ExtensionKit
-
+import MobileCoreServices
 
 class ShareViewController: SLComposeServiceViewController {
+    
+    var urlSession: NSURLSession?
+    
+    var imageToShare: UIImage?
+    var urlToShare: NSURL?
 
-    var attachedImage: UIImage?
+    
+    
+    override func presentationAnimationDidFinish() {
+        let items = extensionContext?.inputItems
+        var itemProvider: NSItemProvider?
+        
+        println("items: \(items)")
+        
+        if items != nil && items!.isEmpty == false {
+            let item = items![0] as! NSExtensionItem
+            
+            if let attachments = item.attachments {
+                //                if !attachments.isEmpty {
+                //                    itemProvider = attachments[0] as? NSItemProvider
+                //                }
+                for attachment in attachments {
+                    itemProvider = attachment as? NSItemProvider
+                    
+                    let imageType = kUTTypeImage as NSString as String
+                    let urlType = kUTTypeURL as NSString  as String
+                    
+                    if itemProvider?.hasItemConformingToTypeIdentifier(urlType) == true {
+                        itemProvider?.loadItemForTypeIdentifier(urlType, options: nil) { (item, error) -> Void in
+                            if error == nil {
+                                if let url = item as? NSURL {
+                                    self.urlToShare = url
+                                }
+                            }
+                        }
+                        
+                    } else if itemProvider?.hasItemConformingToTypeIdentifier(imageType) == true {
+                        itemProvider?.loadItemForTypeIdentifier(imageType, options: nil) { (item, error) -> Void in
+                            if error == nil {
+                                println("Item: \(item)")
+                                if let url = item as? NSURL {
+                                    if let imageData = NSData(contentsOfURL: url) {
+
+                                        self.imageToShare = UIImage(data: imageData)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
     
     override func isContentValid() -> Bool {
         // Do validation of contentText and/or NSExtensionContext attachments here
@@ -26,6 +78,7 @@ class ShareViewController: SLComposeServiceViewController {
         let sharedItem: NSDictionary = ["date": NSDate(),
             "contentText": self.contentText]
         LocalDefaultsManager.sharedInstance.add(object: sharedItem)
+        
         
         // Inform the host that we're done, so it un-blocks its UI. 
         // Note: Alternatively you could call super's -didSelectPost, which will
