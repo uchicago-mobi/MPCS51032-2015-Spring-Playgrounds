@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ds6-Am-jqc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Helping Hand-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Helping Hand" id="BYZ-38-t0r" customClass="ViewController" customModule="HelpingHand" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Call" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHC-S5-tJu">
+                                <rect key="frame" x="188" y="72" width="225" height="55"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="46"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vX-e1-Pit">
+                                <rect key="frame" x="125" y="299" width="350" height="72"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint=""/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Civ-Qb-KQi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Call Mom">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qg0-Ox-xFn">
+                                <rect key="frame" x="247" y="500" width="300" height="50"/>
+                                <accessibility key="accessibilityConfiguration" hint="Tap to fill out suvey" label="Navigate to Satisfaction Survey"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="84o-2S-pXh"/>
+                                    <constraint firstAttribute="width" constant="300" id="oxo-zd-fXD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Satisfaction Survey">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WXc-qK-B5X" kind="show" id="5GI-d2-e6Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ws2-80-niS">
+                                <rect key="frame" x="125" y="177" width="350" height="72"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint="" label="Call nine one one"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="482-fo-Osc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Call 911">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.30980392156862746" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="qg0-Ox-xFn" secondAttribute="trailing" constant="37" id="1HO-h0-IXp"/>
+                            <constraint firstItem="Ws2-80-niS" firstAttribute="top" secondItem="uHC-S5-tJu" secondAttribute="bottom" constant="50" id="2Hw-l3-pgc"/>
+                            <constraint firstAttribute="centerX" secondItem="uHC-S5-tJu" secondAttribute="centerX" id="HoY-WE-RZG"/>
+                            <constraint firstAttribute="centerX" secondItem="Ws2-80-niS" secondAttribute="centerX" id="Jtv-eZ-9mx"/>
+                            <constraint firstAttribute="centerX" secondItem="2vX-e1-Pit" secondAttribute="centerX" id="aCw-MI-lGb"/>
+                            <constraint firstItem="2vX-e1-Pit" firstAttribute="top" secondItem="Ws2-80-niS" secondAttribute="bottom" constant="50" id="i7c-mU-Nh5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qg0-Ox-xFn" secondAttribute="bottom" constant="50" id="tqC-cx-qId"/>
+                            <constraint firstItem="uHC-S5-tJu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="yHA-Vk-URf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Helping Hand" id="Uqp-jn-VRH"/>
+                    <connections>
+                        <outlet property="headerLabel" destination="uHC-S5-tJu" id="yp9-T8-3ti"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1269" y="241"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0b3-iV-0ju">
+            <objects>
+                <viewController id="WXc-qK-B5X" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JVZ-Iw-DQN"/>
+                        <viewControllerLayoutGuide type="bottom" id="QNv-hT-4Qk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RD2-WX-sfO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vqZ-1V-NaA">
+                                <rect key="frame" x="157" y="520" width="287" height="31"/>
+                                <accessibility key="accessibilityConfiguration" hint="Satisfaction with accessibility implementation." label="Accessibility Satisfaction"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="283" id="wi3-lh-FAw"/>
+                                </constraints>
+                            </slider>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="Hand" translatesAutoresizingMaskIntoConstraints="NO" id="4ej-fW-8qp">
+                                <rect key="frame" x="16" y="84" width="78" height="82"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Hand" translatesAutoresizingMaskIntoConstraints="NO" id="vTa-oX-eIP">
+                                <rect key="frame" x="159" y="151" width="283" height="297"/>
+                                <accessibility key="accessibilityConfiguration" hint="Image of a hand" label="Logo">
+                                    <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.30980392159999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="vTa-oX-eIP" secondAttribute="centerX" id="Anx-7F-Vf1"/>
+                            <constraint firstAttribute="centerX" secondItem="vqZ-1V-NaA" secondAttribute="centerX" id="N6C-GT-NWG"/>
+                            <constraint firstAttribute="centerY" secondItem="vTa-oX-eIP" secondAttribute="centerY" id="YSo-Wh-0XK"/>
+                            <constraint firstItem="QNv-hT-4Qk" firstAttribute="top" secondItem="vqZ-1V-NaA" secondAttribute="bottom" constant="50" id="hOM-Tg-Abn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2H-dp-cgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2009" y="241"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qMi-bX-eCn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ds6-Am-jqc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r4B-a3-GHf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="plw-bL-yLB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMO-Mq-jY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="252"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hand" width="283" height="297"/>
+    </resources>
+</document>

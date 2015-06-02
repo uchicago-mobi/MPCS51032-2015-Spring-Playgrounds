@@ -1,0 +1,39 @@
+
+/* Class = "UIButton"; normalTitle = "Call Mom"; ObjectID = "2vX-e1-Pit"; */
+"2vX-e1-Pit.normalTitle" = "Call Mom in Spanish";
+
+/* Class = "UIViewController"; title = "Helping Hand"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Helping Hand in Spanish";
+
+/* Class = "UINavigationItem"; title = "Helping Hand"; ObjectID = "Uqp-jn-VRH"; */
+"Uqp-jn-VRH.title" = "Helping Hand in Spanish";
+
+/* Class = "UIButton"; accessibilityHint = "Call nine one one"; ObjectID = "Ws2-80-niS"; */
+"Ws2-80-niS.accessibilityHint" = "Call nine uno uno";
+
+/* Class = "UIButton"; normalTitle = "Call 911"; ObjectID = "Ws2-80-niS"; */
+"Ws2-80-niS.normalTitle" = "Call 911";
+
+/* Class = "UIButton"; accessibilityHint = "Tap to fill out suvey"; ObjectID = "qg0-Ox-xFn"; */
+"qg0-Ox-xFn.accessibilityHint" = "Tap to fill out suvey";
+
+/* Class = "UIButton"; accessibilityLabel = "Navigate to Satisfaction Survey"; ObjectID = "qg0-Ox-xFn"; */
+"qg0-Ox-xFn.accessibilityLabel" = "Navigate to Satisfaction Survey";
+
+/* Class = "UIButton"; normalTitle = "Satisfaction Survey"; ObjectID = "qg0-Ox-xFn"; */
+"qg0-Ox-xFn.normalTitle" = "Satisfaction Survey";
+
+/* Class = "UILabel"; text = "Quick Call"; ObjectID = "uHC-S5-tJu"; */
+"uHC-S5-tJu.text" = "Quick Call";
+
+/* Class = "UIImageView"; accessibilityHint = "Image of a hand"; ObjectID = "vTa-oX-eIP"; */
+"vTa-oX-eIP.accessibilityHint" = "Image of a hand";
+
+/* Class = "UIImageView"; accessibilityLabel = "Logo"; ObjectID = "vTa-oX-eIP"; */
+"vTa-oX-eIP.accessibilityLabel" = "Logo";
+
+/* Class = "UISlider"; accessibilityHint = "Satisfaction with accessibility implementation."; ObjectID = "vqZ-1V-NaA"; */
+"vqZ-1V-NaA.accessibilityHint" = "Satisfaction with accessibility implementation.";
+
+/* Class = "UISlider"; accessibilityLabel = "Accessibility Satisfaction"; ObjectID = "vqZ-1V-NaA"; */
+"vqZ-1V-NaA.accessibilityLabel" = "Accessibility Satisfaction";
