@@ -168,6 +168,8 @@
 		379C07FC1AF729F500FD589F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "The University of Chicago";
 				TargetAttributes = {
