@@ -18,6 +18,14 @@ class ShareViewController: SLComposeServiceViewController {
     var textToShare: String?
     
     override func presentationAnimationDidFinish() {
+        
+        // Choose here to see different method.
+        // attachmentExtractData()
+        javascripExtractData()
+
+    }
+    
+    func attachmentExtractData(){
         let items = extensionContext?.inputItems
         var itemProvider: NSItemProvider?
         
@@ -29,10 +37,10 @@ class ShareViewController: SLComposeServiceViewController {
         // Loop through all the attachment items and store their values in properties
         // Note: The App Store makes three attachements available: image, plain-text, and url
         if let attachments = item.attachments {
-
+            
             for attachment in attachments {
                 itemProvider = attachment as? NSItemProvider
-
+                
                 // Get text
                 //let urlType = kUTTypePlainText as NSString  as String
                 if itemProvider?.hasItemConformingToTypeIdentifier("public.plain-text") == true {
@@ -44,7 +52,7 @@ class ShareViewController: SLComposeServiceViewController {
                         }
                     }
                 }
-
+                
                 // Get URL
                 //let urlType = kUTTypeURL as NSString  as String
                 if itemProvider?.hasItemConformingToTypeIdentifier("public.url") == true {
@@ -76,6 +84,36 @@ class ShareViewController: SLComposeServiceViewController {
         
     }
     
+    
+    // MARK: we use javascript to extract data.
+    func javascripExtractData() {
+        
+        let extensionItem = extensionContext?.inputItems.first as! NSExtensionItem
+        let itemProvider = extensionItem.attachments?.first as! NSItemProvider
+        
+        let propertyList = String(kUTTypePropertyList)
+        if itemProvider.hasItemConformingToTypeIdentifier(propertyList) {
+            itemProvider.loadItemForTypeIdentifier(propertyList, options: nil, completionHandler: { (item, error) -> Void in
+                let dictionary = item as! NSDictionary
+                NSOperationQueue.mainQueue().addOperationWithBlock {
+                    let results = dictionary[NSExtensionJavaScriptPreprocessingResultsKey] as! NSDictionary
+                    
+                    // Get data from Preprocessor.js
+                    if let tempUrlToShare = results["URL"] as? String {
+                        self.urlToShare = tempUrlToShare
+                    }
+                    if let tempTitleToShare = results["title"] as? String {
+                        self.textToShare = tempTitleToShare
+                    }
+                    
+                }
+            })
+        } else {
+            println("error")
+        }
+    }
+
+    
     override func isContentValid() -> Bool {
         // Do validation of contentText and/or NSExtensionContext attachments here
         return true
@@ -91,15 +129,29 @@ class ShareViewController: SLComposeServiceViewController {
 
         // Also, note that you get the app store URL, so you could use it to get
         // the image that way.
-        let imageData: NSData? = UIImagePNGRepresentation(imageToShare!)
-        let sharedItem: NSDictionary = [ "date": NSDate(),
-                                        "contentText": textToShare!,
-                                        "imageData": imageData!,
-                                        "url": urlToShare!
-                                        ]
         
-        LocalDefaultsManager.sharedInstance.add(object: sharedItem)
-        
+        if (textToShare != nil) && (urlToShare != nil) {
+            
+            var sharedItem: NSDictionary
+            
+            if (imageToShare != nil) {
+                let imageData: NSData? = UIImagePNGRepresentation(imageToShare!)
+                sharedItem = [ "date": NSDate(),
+                    "contentText": textToShare!,
+                    "imageData": imageData!,
+                    "url": urlToShare!
+                ]
+            }
+            else {
+                sharedItem = [ "date": NSDate(),
+                    "contentText": textToShare!,
+                    "url": urlToShare!
+                ]
+            }
+            
+            LocalDefaultsManager.sharedInstance.add(object: sharedItem)
+        }
+
         
         // Inform the host that we're done, so it un-blocks its UI.
         // Note: Alternatively you could call super's -didSelectPost, which will similarly complete the extension context.
